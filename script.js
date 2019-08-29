@@ -86,7 +86,7 @@ genBut.addEventListener('click', function(){
 copyBut.addEventListener('click', function() {
   let $temp = $("<input>");
   $("body").append($temp);
-  $temp.val($('div#code').text()).select();
+  $temp.val('/* Motyw stworzony przez Generator Motywow by Deez https://deezor1.github.io/theme-generator/ */ ' + $('div#code').text()).select();
   document.execCommand("copy");
   $temp.remove();
   copyBut.style = 'border-color: #33C3F0; color: #33C3F0; transition: .5s; animation: none;';
