@@ -494,3 +494,6 @@ html {
 .blink{
   animation: 1s blink infinite;
 }
+#code{
+  user-select: none;
+}
