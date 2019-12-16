@@ -4,7 +4,7 @@ const copyBut = document.querySelector('#copyBut');
 const genBut = document.querySelector('#generateButton');
 genBut.addEventListener('click', function () {
     let gfx = [];
-    for (i = 0; i < 56; i++) {
+    for (i = 0; i < 57; i++) {
         gfx.push(document.querySelector(`#gfx-${i}`).value);
     }
     let c = 'const styleString = "';
@@ -14,7 +14,7 @@ genBut.addEventListener('click', function () {
     gfx[3] ? c += `#alert .a1, #alert .a3, #alert button, #dlgwin .w1, #staminashop .a1, #staminashop .a3, BUTTON.bal_ok, BUTTON.bal_cancel, BUTTON.bal_yes, BUTTON.bal_no, BUTTON.bal_pay, BUTTON.bal_pay_increase, BUTTON.bal_pay_decrease {background-image: url(${gfx[3]}) !important;}<br>` : null;
     gfx[4] ? c += `#alert, #dlgwin, #staminashop, #upgradeclandepoalert, .MM-alert {background-image: url(${gfx[4]}) !important;}<br>` : null;
     gfx[5] ? c += `.closebut, .close-but, #pre-premium-panel .close-pre-premium, #recipes .close-but, #chests-window .close-chests-window, #loot-preview .close-but{background-image: url(${gfx[5]});}<br>` : null;
-    gfx[6] ? c += `#quest-log-window{background-image: url(${gfx[6]}) !important;}<br>` : null;
+    gfx[6] ? c += `#quest-log-window{background-image: url(${gfx[6]});}<br>` : null;
     gfx[7] ? c += `#clanmenu{background-image: url(${gfx[7]});}<br>` : null;
     gfx[8] ? c += `#recipes {background-image: url(${gfx[8]});}<br>` : null;
     gfx[9] ? c += `.conf-title{background-image: url(${gfx[9]}) !important;}<br>` : null;
@@ -59,13 +59,13 @@ genBut.addEventListener('click', function () {
     gfx[52] ? c += `#tradebg, #trade BUTTON{background-image: url(${gfx[52]});}<br>` : null;
     gfx[53] ? c += `#alert div.mAlertInputContainer input[name="mAlertInput"], #alert div.mAlertInputContainer .bRight, #alert div.mAlertInputContainer .bLeft{background-image: url(${gfx[53]});}<br>` : null;
     gfx[54] ? c += `#party{background-image: url(${gfx[54]}) !important;}<br>` : null;
+    gfx[56] ? c += `#dlgwin .w2{background-image: url(${gfx[56]}) !important;}<br>` : null;
     c += '";<br>const styleElement = document.createElement("style");<br>styleElement.innerHTML = styleString;<br>document.getElementsByTagName("head")[0].appendChild(styleElement);';
     gfx[45] ? c += `<br>document.querySelector('img.border-u').src = '${gfx[45]}';` : null;
     gfx[46] ? c += `<br>document.querySelector('img.border-l').src = '${gfx[46]}';` : null;
     gfx[47] ? c += `<br>document.querySelector('img.border-r').src = '${gfx[47]}';` : null;
     gfx[48] ? c += `<br>document.querySelector('img.border-d').src = '${gfx[48]}';` : null;
     gfx[55] ? c += `<br>document.querySelector('#party img').src = '${gfx[55]}';` : null;
-    // gfx[6] ? c += `#dlgwin .w2{background-image: url(${gfx[6]}) !important;}<br>` : null;
     if (c !== 'const styleString = "";<br>const styleElement = document.createElement("style");<br>styleElement.innerHTML = styleString;<br>document.getElementsByTagName("head")[0].appendChild(styleElement);') {
         con.style.display = 'block';
         code.innerHTML = c;
