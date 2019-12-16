@@ -101,9 +101,9 @@ const toTop = document.querySelector('#scroll-to-top');
 
 function scroll() {
     if (window.scrollY > document.body.scrollHeight * 0.33) {
-        toTop.style.top = '83vh';
+        toTop.style.bottom = '10px';
     } else {
-        toTop.style.top = '105vh';
+        toTop.style.top = '-100px';
     }
 }
 scroll();
