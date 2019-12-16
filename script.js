@@ -13,7 +13,7 @@ genBut.addEventListener('click', function () {
     gfx[2] ? c += `#chat.left, #chattabs.left, #chat.left #chattabs s{background-image: url(${gfx[2]});}<br>` : null;
     gfx[3] ? c += `#alert .a1, #alert .a3, #alert button, #dlgwin .w1, #staminashop .a1, #staminashop .a3, BUTTON.bal_ok, BUTTON.bal_cancel, BUTTON.bal_yes, BUTTON.bal_no, BUTTON.bal_pay, BUTTON.bal_pay_increase, BUTTON.bal_pay_decrease {background-image: url(${gfx[3]}) !important;}<br>` : null;
     gfx[4] ? c += `#alert, #dlgwin, #staminashop, #upgradeclandepoalert, .MM-alert {background-image: url(${gfx[4]}) !important;}<br>` : null;
-    gfx[5] ? c += `.closebut, .close-but, #pre-premium-panel .close-pre-premium, #recipes .close-but, #chests-window .close-chests-window, #loot-preview .close-but{background-image: url(${gfx[5]});}<br>` : null;
+    gfx[5] ? c += `.closebut, .close-but, #pre-premium-panel .close-pre-premium, #recipes .close-but, #chests-window .close-chests-window, #loot-preview .close-but, #quest-log-window .quest-log-close-but{background-image: url(${gfx[5]});}<br>` : null;
     gfx[6] ? c += `#quest-log-window{background-image: url(${gfx[6]});}<br>` : null;
     gfx[7] ? c += `#clanmenu{background-image: url(${gfx[7]});}<br>` : null;
     gfx[8] ? c += `#recipes {background-image: url(${gfx[8]});}<br>` : null;
