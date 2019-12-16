@@ -49,24 +49,10 @@
   .row{
     text-align: center;
   }
-  .fa-arrow-circle-up, .fa-arrow-circle-down{
-    font-size: 6vw;
-    position: absolute;
-    left: 2vw;
-    top: 2vw;
-    color: #1EAEDB;
-  }
 }
 
 /* For devices larger than 750px */
 @media (min-width: 750px) {
-  .fa-arrow-circle-up, .fa-arrow-circle-down{
-    font-size: 3vw;
-    position: absolute;
-    left: 1vw;
-    top: 1vw;
-    color: #1EAEDB;
-  }
   .container {
     width: 80%; }
   .column,
