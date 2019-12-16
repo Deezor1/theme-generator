@@ -49,13 +49,6 @@
   .row{
     text-align: center;
   }
-  #scroll-to-top{
-    width: 10vw;
-    height: 10vw;
-    left: 85vw;
-    top: 105vh;
-    border-radius: 4vw;
-  }
   .fa-arrow-circle-up, .fa-arrow-circle-down{
     font-size: 6vw;
     position: absolute;
@@ -67,13 +60,6 @@
 
 /* For devices larger than 750px */
 @media (min-width: 750px) {
-  #scroll-to-top{
-    width: 5vw;
-    height: 5vw;
-    left: 92vw;
-    top: 105vh;
-    border-radius: 2vw;
-  }
   .fa-arrow-circle-up, .fa-arrow-circle-down{
     font-size: 3vw;
     position: absolute;
@@ -458,6 +444,7 @@ input, button{
   position: fixed;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   cursor: pointer;
   border: 1px solid #1EAEDB;
   transition: .3s;
