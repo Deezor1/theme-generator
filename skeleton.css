@@ -456,6 +456,8 @@ input, button{
 #scroll-to-top{
   background: #FFF;
   position: fixed;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   border: 1px solid #1EAEDB;
   transition: .3s;
