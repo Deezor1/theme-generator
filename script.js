@@ -103,7 +103,7 @@ function scroll() {
     if (window.scrollY > document.body.scrollHeight * 0.33) {
         toTop.style.bottom = '10px';
     } else {
-        toTop.style.top = '-100px';
+        toTop.style.bottom = '-100px';
     }
 }
 scroll();
