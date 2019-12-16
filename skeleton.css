@@ -434,7 +434,15 @@ input, button{
   cursor: pointer;
   border: 1px solid #1EAEDB;
   transition: .3s;
+  text-align: center;
+  line-height: 50px;
 }
+
+.fa-arrow-circle-up{
+  font-size: 28px;
+  color: #1EAEDB;
+}
+
 html {
   scroll-behavior: smooth;
 }
