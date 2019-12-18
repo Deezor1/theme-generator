@@ -41,7 +41,7 @@ genBut.addEventListener('click', function () {
     gfx[30] ? c += `#lagmeter{background-image: url(${gfx[30]});}<br>` : null;
     gfx[31] ? c += `#pvpmode{background-image: url(${gfx[31]});}<br>` : null;
     gfx[32] ? c += `#shop{background-image: url(${gfx[32]});}<br>` : null;
-    gfx[33] ? c += `#shop_close, #shop_accept, #match-details-wnd .close-match-details-wrapper .close-match-details{background-image: url(${gfx[33]});}<br>#shop_recover_items{background: url(${gfx[33]}) -182px 0}<br>` : null;
+    gfx[33] ? c += `#shop_close, #shop_accept, #match-details-wnd .close-match-details-wrapper .close-match-details{background-image: url(${gfx[33]});}<br>#shop_recover_items{background: url(${gfx[33]}) -182px 0}<br>#create_new_clan{background: url(${gfx[33]}) -368px -0px}<br>` : null;
     gfx[34] ? c += `#sl_shop_banner{background-image: url(${gfx[34]});}<br>#hieronim_button{background-image: url(${gfx[34]}) 0px -94px;}<br>#gold_shop_banner{background-image: url(${gfx[34]}) 0px -54px;}<br>#lehim_button{background-image: url(${gfx[34]}) 0px -127px;}` : null;
     gfx[35] ? c += `#shop.outfit{background-image: url(${gfx[35]});}<br>` : null;
     gfx[36] ? c += `#auctions button, #ahtitle, #ahselect, #ah_mylist H5, #ahselect B#b_myah, #auctions .itemcont, #auctions #ah_filter BUTTON{background-image: url(${gfx[36]}) !important;}<br>` : null;
