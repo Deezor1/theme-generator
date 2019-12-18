@@ -57,7 +57,7 @@ genBut.addEventListener('click', function () {
     gfx[50] ? gfx[50] === 'usuń' ? c += `#leorn2{display: none}` : c += `#leorn2{background: url(${gfx[50]}) no-repeat;box-sizing:border-box;display:block;height:26px;padding-left:14px;width:14px;}` : null;
     gfx[51] ? c += `.MM-dialog-header{background-image: url(${gfx[51]});}<br>` : null;
     gfx[52] ? c += `#tradebg, #trade BUTTON{background-image: url(${gfx[52]});}<br>` : null;
-    gfx[53] ? c += `#alert div.mAlertInputContainer input[name="mAlertInput"], #alert div.mAlertInputContainer .bRight, #alert div.mAlertInputContainer .bLeft{background-image: url(${gfx[53]});}<br>` : null;
+    gfx[53] ? c += `#alert div.mAlertInputContainer input[name='mAlertInput'], #alert div.mAlertInputContainer .bRight, #alert div.mAlertInputContainer .bLeft{background-image: url(${gfx[53]});}<br>` : null;
     gfx[54] ? c += `#party{background-image: url(${gfx[54]}) !important;}<br>` : null;
     gfx[56] ? c += `#dlgwin .w2{background-image: url(${gfx[56]}) !important;}<br>` : null;
     c += '";<br>const styleElement = document.createElement("style");<br>styleElement.innerHTML = styleString;<br>document.getElementsByTagName("head")[0].appendChild(styleElement);';
