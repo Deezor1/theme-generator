@@ -4,7 +4,7 @@ const copyBut = document.querySelector('#copyBut');
 const genBut = document.querySelector('#generateButton');
 genBut.addEventListener('click', function () {
     let gfx = [];
-    for (i = 0; i < 57; i++) {
+    for (i = 0; i < 59; i++) {
         gfx.push(document.querySelector(`#gfx-${i}`).value);
     }
     let c = 'const styleString = "';
@@ -60,6 +60,8 @@ genBut.addEventListener('click', function () {
     gfx[53] ? c += `#alert div.mAlertInputContainer input[name='mAlertInput'], #alert div.mAlertInputContainer .bRight, #alert div.mAlertInputContainer .bLeft{background-image: url(${gfx[53]});}<br>` : null;
     gfx[54] ? c += `#party{background-image: url(${gfx[54]}) !important;}<br>` : null;
     gfx[56] ? c += `#dlgwin .w2{background-image: url(${gfx[56]}) !important;}<br>` : null;
+    gfx[57] ? c += `#depo, #depo-title{background-image: url(${gfx[57]});}<br>` : null;
+    gfx[58] ? c += `#depo BUTTON{background-image: url(${gfx[58]});}<br>` : null;
     c += '";<br>const styleElement = document.createElement("style");<br>styleElement.innerHTML = styleString;<br>document.getElementsByTagName("head")[0].appendChild(styleElement);';
     gfx[45] ? c += `<br>document.querySelector('img.border-u').src = '${gfx[45]}';` : null;
     gfx[46] ? c += `<br>document.querySelector('img.border-l').src = '${gfx[46]}';` : null;
