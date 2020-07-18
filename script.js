@@ -22,7 +22,7 @@ genBut.addEventListener('click', function () {
     gfx[11] ? c += `#config .save{background-image: url(${gfx[11]});}<br>` : null;
     gfx[12] ? c += `#config .cancel{background-image: url(${gfx[12]});}<br>` : null;
     gfx[13] ? c += `.changeClient{background-image: url(${gfx[13]});}<br>` : null;
-    gfx[14] ? c += `#cfg_options DIV, .my-checkbox, .my-checkbox.active{background-image: url(${gfx[14]});}<br>` : null;
+    gfx[14] ? c += `#cfg_options DIV::before, .my-checkbox, .my-checkbox.active{background-image: url(${gfx[14]});}<br>` : null;
     gfx[15] ? c += `#mappanel{background-image: url(${gfx[15]});}<br>` : null;
     gfx[16] ? c += `#skills, #skills_title{background-image: url(${gfx[16]});}<br>` : null;
     gfx[17] ? c += `.skills_tab_header{background-image: url(${gfx[17]});}<br>` : null;
