@@ -114,5 +114,7 @@ toTop.addEventListener('click', function () {
     window.scrollTo(0, 0);
 });
 $(document).ready(function() {
-    Tipped.create('.del-tip');
+    Tipped.create('.del-tip', {
+        skin: 'blue'   
+    });
 });
