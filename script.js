@@ -68,6 +68,7 @@ genBut.addEventListener('click', function () {
     gfx[47] ? c += `<br>document.querySelector('img.border-r').src = '${gfx[47]}';` : null;
     gfx[48] ? c += `<br>document.querySelector('img.border-d').src = '${gfx[48]}';` : null;
     gfx[55] ? c += `<br>document.querySelector('#party img').src = '${gfx[55]}';` : null;
+    document.querySelector('#ornaments').checked ? c += `<br>document.querySelector('lt-hor').style.display = 'none';<br>document.querySelector('lt-ver').style.display = 'none';<br>document.querySelector('ld-hor').style.display = 'none';<br>document.querySelector('ld-ver').style.display = 'none';<br>document.querySelector('rt-hor').style.display = 'none';<br>document.querySelector('rt-ver').style.display = 'none';<br>document.querySelector('rd-hor').style.display = 'none';<br>document.querySelector('rd-ver').style.display = 'none';` : null;
     if (c !== 'const styleString = "";<br>const styleElement = document.createElement("style");<br>styleElement.innerHTML = styleString;<br>document.getElementsByTagName("head")[0].appendChild(styleElement);') {
         con.style.display = 'block';
         code.innerHTML = c;
