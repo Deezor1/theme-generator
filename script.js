@@ -4,7 +4,7 @@ const copyBut = document.querySelector('#copyBut');
 const genBut = document.querySelector('#generateButton');
 genBut.addEventListener('click', function () {
     let gfx = [];
-    for (i = 0; i < 59; i++) {
+    for (i = 0; i < 60; i++) {
         gfx.push(document.querySelector(`#gfx-${i}`).value);
     }
     let c = 'const styleString = "';
