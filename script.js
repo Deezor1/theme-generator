@@ -62,6 +62,7 @@ genBut.addEventListener('click', function () {
     gfx[56] ? c += `#dlgwin .w2{background-image: url(${gfx[56]}) !important;}<br>` : null;
     gfx[57] ? c += `#depo, #depo-title{background-image: url(${gfx[57]});}<br>` : null;
     gfx[58] ? c += `#depo BUTTON{background-image: url(${gfx[58]});}<br>#depo-gold INPUT {background: url(${gfx[58]}) no-repeat 0 -228px;}<br>` : null;
+    gfx[59] ? c += `#loading{background-image: url(${gfx[59]});}<br>` : null;
     c += '";<br>const styleElement = document.createElement("style");<br>styleElement.innerHTML = styleString;<br>document.getElementsByTagName("head")[0].appendChild(styleElement);';
     gfx[45] ? c += `<br>document.querySelector('img.border-u').src = '${gfx[45]}';` : null;
     gfx[46] ? c += `<br>document.querySelector('img.border-l').src = '${gfx[46]}';` : null;
