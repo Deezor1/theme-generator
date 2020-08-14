@@ -3,7 +3,7 @@ const code = document.querySelector('#code');
 const copyBut = document.querySelector('#copyBut');
 const genBut = document.querySelector('#generateButton');
 genBut.addEventListener('click', function () {
-    let gfx = [];
+    const gfx = [];
     for (i = 0; i < 60; i++) {
         gfx.push(document.querySelector(`#gfx-${i}`).value);
     }
