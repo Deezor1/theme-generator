@@ -64,13 +64,13 @@ genBut.addEventListener('click', function () {
     gfx[58] ? c += `#depo BUTTON{background-image: url(${gfx[58]});}<br>#depo-gold INPUT {background: url(${gfx[58]}) no-repeat 0 -228px;}<br>` : null;
     gfx[59] ? c += `#loading{background-image: url(${gfx[59]});}<br>` : null;
     gfx[60] ? c += `#bm_edit_panel{background-image: url(${gfx[60]});}<br>` : null;
+    document.querySelector('#ornaments').checked ? c += `.lt-hor, .lt-ver, .ld-hor, .ld-ver, .rt-hor, .rt-ver, .rd-hor, .rd-ver{display: none !important}<br>` : null;
     c += '";<br>const styleElement = document.createElement("style");<br>styleElement.innerHTML = styleString;<br>document.getElementsByTagName("head")[0].appendChild(styleElement);';
     gfx[45] ? c += `<br>document.querySelector('img.border-u').src = '${gfx[45]}';` : null;
     gfx[46] ? c += `<br>document.querySelector('img.border-l').src = '${gfx[46]}';` : null;
     gfx[47] ? c += `<br>document.querySelector('img.border-r').src = '${gfx[47]}';` : null;
     gfx[48] ? c += `<br>document.querySelector('img.border-d').src = '${gfx[48]}';` : null;
     gfx[55] ? c += `<br>document.querySelector('#party img').src = '${gfx[55]}';` : null;
-    document.querySelector('#ornaments').checked ? c += `<br>document.querySelector('.lt-hor').style.display = 'none';<br>document.querySelector('.lt-ver').style.display = 'none';<br>document.querySelector('.ld-hor').style.display = 'none';<br>document.querySelector('.ld-ver').style.display = 'none';<br>document.querySelector('.rt-hor').style.display = 'none';<br>document.querySelector('.rt-ver').style.display = 'none';<br>document.querySelector('.rd-hor').style.display = 'none';<br>document.querySelector('.rd-ver').style.display = 'none';` : null;
     if (c !== 'const styleString = "";<br>const styleElement = document.createElement("style");<br>styleElement.innerHTML = styleString;<br>document.getElementsByTagName("head")[0].appendChild(styleElement);') {
         con.style.display = 'block';
         code.innerHTML = c;
